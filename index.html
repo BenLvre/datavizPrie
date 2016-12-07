@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>dataviz- lelievre_sicot</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      
+      <h1>Datavisulation de données de speed dating</h1>
+      
+      <div style="position:fixed;top: 50%;left: 0;">
+        <select class="age_target form-control" >
+          <option>Choisir tranche âge</option>
+          <option>18-20</option>
+          <option>20-30</option>
+          <option>30-40</option>
+          <option>40-55</option>
+        </select>
+      </div>
+      <div>
+        
+          <div id="participation">
+            <h2>Participation</h2>
+            <div id="dataviz1"></div>
+            
+            
+          </div>
+        
+          <div id="perception">
+
+            <h2>Perception de soi</h2>
+              <p>Cette dataviz a pour but de montrer l'évolution de la perception que les personnes peuvent avoir d'elle-même.<br>
+              Pendant le speed dating, il a été demandé au personne de ce noté eux même selon cing critères  sur une échelle de 1 à 10 (1=terrible,10=génial) <br>
+              Ces récoltes ont été faites trois fois : une première fois avant le speed dating, une seconde fois au mileu du speed dating et une troisième fois trois ou quatre semaines après le speed dating<br>
+              <p> Notons que les données sont biaisées par le fait que de nombreuses personnes n'ont pas renvoyé le formulaire avec leurs notes lors de la troisième fois</p>
+      
+            <div>
+              <div class="col-md-4" id="dataviz3_1" ></div>
+              <div class="col-md-4" id="dataviz3_2" ></div>
+              <div class="col-md-4" id="dataviz3_3" ></div>
+            </div>
+          </div>
+      </div>
+
+
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    
+  
+  
+    <script type="text/javascript" src="js/percep.js"></script>
+    <script type="text/javascript" src="js/participation.js"></script>
+  
+  </body>
+</html>
